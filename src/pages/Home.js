@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom' //
 import Card from '../components/Card'
 import annonces from '../annonces.json'
 
-const Home = () => {
+function Home() {
   return (
     <div className="home">
       <Banner
