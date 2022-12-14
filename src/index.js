@@ -7,6 +7,7 @@ import Header from './components/Header'
 import './styles/settings.css'
 import Error from './pages/Error'
 import Footer from './components/Footer'
+import Annonce from './pages/Annonce'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -17,9 +18,11 @@ root.render(
         {/* chemin vers la page accueil */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/annonces/:annonceId" element={<Annonce />} />
         {/* path fonctionne si jamais l'url ne correspond a rien de declarer au dessus et ramene a l'accueil */}
-        {/* <Route path="*" element={<Home />} /> */}
+        <Route path="*" element={<Home />} />
         <Route path="/404" element={<Error />} />
+        <Route path="/annonces/annonce" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>

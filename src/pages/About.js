@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../components/Banner'
-import BannerImg from '../assets/bannerAbout.svg'
+import BannerImg from '../assets/bannerAbout.png'
 import Collapse from '../components/Collapse'
 
 const collapseData = [

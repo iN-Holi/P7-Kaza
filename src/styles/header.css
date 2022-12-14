@@ -19,6 +19,17 @@
 
 .header-nav a{
     height: 34px;
+    width: 450px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.header-nav a:hover{
+    text-decoration-line: underline;
+}
+
+.header a {
+    height: 34px;
     width: 116px;
     font-size: 24px;
     font-weight: 500;
@@ -26,14 +37,28 @@
     padding-left: 40px;
     color: #ff6060;
     text-decoration: none;
-}
 
-.header-nav a:hover{
-    text-decoration-line: underline;
 }
 
 @media screen and (max-width: 768px) {
     .header{
         margin: 40px 60px 63px 20px;
+    }
+    .header-logo{
+        height: 47px;
+        width: 145px; 
+    }
+    .header-nav {
+        margin-top: 10px;   
+        height: 17px;
+        width: 180px;
+    }
+    .header a{
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        height: 17px;
+        width: 71px;
+        padding-left: 12px;
     }
 }

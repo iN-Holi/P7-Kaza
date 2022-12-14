@@ -1,0 +1,45 @@
+.slide-container {
+    width: auto;
+    height: 40vh;
+}
+
+.slide-container img {
+    height: 10vh;
+}
+
+.backgroundPic {
+    width:auto;
+     height:40vh;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     position: relative;
+     border-radius: 25px;
+     margin-top: 30px;
+}
+.slide-container p {
+        position:relative;
+        bottom:16vh;
+        font-weight:bold;
+        text-align:center;color:white;
+}
+
+.twoArrows {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 25vh;
+    margin: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .backgroundPic {
+        height: 35vh;
+    }
+    .twoArrows {
+        bottom: 21vh;
+    }
+    .slide-container {
+        height: 35vh;
+    }
+}

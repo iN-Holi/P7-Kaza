@@ -1,12 +1,14 @@
+*{
+    margin: 0;
+}
+
 body {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    /* margin: 10px 20px 0 20px; */
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    background: #FFFFFF;
-    height:100%; 
-    width: 100%;
-    min-height: 100vh;
-    margin: 0 100px;
+    color: #ff6060;
+}
+
+.home, .about-container, .page-container{
+    margin: 0 20px 0 20px;
 }

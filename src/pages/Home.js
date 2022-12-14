@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../components/Banner'
-import BannerImg from '../assets/bannerHome.svg'
+import BannerImg from '../assets/bannerHome.png'
 import { NavLink } from 'react-router-dom' //
 import Card from '../components/Card'
 import annonces from '../annonces.json'
