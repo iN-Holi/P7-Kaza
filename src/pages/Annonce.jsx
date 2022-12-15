@@ -1,13 +1,17 @@
-import { useParams, Navigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Collapse from '../components/Collapse'
 import annonces from '../annonces.json'
 import Rating from '../components/Rating'
 import Slideshow from '../components/Slideshow'
 import Tag from '../components/Tag'
+import Error from './Error'
 
 function Annonce() {
   const { annonceId } = useParams()
   const annonce = annonces.find((annonce) => annonce.id === annonceId)
+  if (!annonce) {
+    return <Error />
+  } 
 
   const { title, location, host, description, rating, pictures } = annonce
 
@@ -56,7 +60,7 @@ function Annonce() {
       </div>
     </>
   ) : (
-    Navigate('/404')
+    <Error />
   )
 }
 
