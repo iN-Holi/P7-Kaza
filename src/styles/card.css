@@ -4,12 +4,13 @@
     height: 230px;
     overflow: hidden;
     position: relative;
-    margin: 10px 0;
+    margin: 10px 0;  
 }
 
 .card-container img {
     width: inherit;
     height: inherit;
+    filter: contrast(70%);
 }
 
 .card-container h3 {
@@ -17,6 +18,7 @@
     bottom: 10px;
     left:10px;
     color: #fff;
+
 }
 .card-gallery {
     background-color: #f7f7f7;
@@ -31,8 +33,11 @@
 
 @media  screen and (max-width: 768px) {
     .card-container {
-        width: inherit;
+        width: 100%;
         margin: 10px 0;
+    }
+    .home{
+        margin: 0 20px;
     }
 
     .card-gallery {
@@ -41,10 +46,10 @@
         align-items: center;
         align-content: center;
         background-color: #fff;
-        width: auto;
         padding: 0;
     }
     .card-gallery a{
-        width: -webkit-fill-available
+        width: 100%;
     }
+
 }

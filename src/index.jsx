@@ -22,7 +22,6 @@ root.render(
         {/* path fonctionne si jamais l'url ne correspond a rien de declarer au dessus et ramene a l'accueil */}
         <Route path="*" element={<Home />} />
         <Route path="/404" element={<Error />} />
-        <Route path="/annonces/annonce" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>

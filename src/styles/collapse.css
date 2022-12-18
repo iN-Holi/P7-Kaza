@@ -27,11 +27,12 @@
 }
 .collapse-annonce{
     display: flex;
+    gap: 35px;
 }
 
 @media screen and (max-width: 768px) {
     .collapse-container {
-        width: auto;
+        width: 100%;
         margin-bottom: 20px;
     }
     .collapse-annonce {

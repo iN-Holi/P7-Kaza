@@ -1,7 +1,6 @@
 *{
     margin: 0;
 }
-
 body {
     /* margin: 10px 20px 0 20px; */
     font-family: 'Montserrat', sans-serif;
@@ -10,5 +9,18 @@ body {
 }
 
 .home, .about-container, .page-container{
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
+}
+
+.about-content{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-content{
+        width: auto;
+        margin-bottom: 20px;
+    }
 }
